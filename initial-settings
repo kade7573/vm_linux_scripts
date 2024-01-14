@@ -1,0 +1,21 @@
+# update
+sudo apt update -y && sudo apt upgrade -y
+
+# Timzone : UTC
+sudo timedatectl set-timezone UTC
+
+# Add VMware Scripts
+mv ./mount-shared-folders ~/
+mv ./restart-vm-tools ~/
+chmod 700 ~/mount-shared-folders
+chmod 700 ~/restart-vm-tools
+
+# Korean Keyboard
+sudo apt-get install fonts-nanum*
+sudo apt-get install fcitx-lib*
+sudo apt-get install fcitx-hangul
+im-config -n fcitx
+fcitx-config-gtk3
+
+# Clear History
+cat /dev/null > ~/.zsh_history
