@@ -11,9 +11,9 @@ chmod 700 ~/mount-shared-folders
 chmod 700 ~/restart-vm-tools
 
 # Korean Keyboard
-sudo apt-get install fonts-nanum*
-sudo apt-get install fcitx-lib*
-sudo apt-get install fcitx-hangul
+sudo apt install fonts-nanum* -y
+sudo apt install fcitx-lib* -y
+sudo apt install fcitx-hangul -y
 im-config -n fcitx
 fcitx-config-gtk3
 
